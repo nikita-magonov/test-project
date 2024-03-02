@@ -1,0 +1,11 @@
+---
+databaseChangeLog:
+  - include:
+      file: book.sql
+      relativeToChangelogFile: true
+  - include:
+      file: author.sql
+      relativeToChangelogFile: true
+  - include:
+      file: book_author.sql
+      relativeToChangelogFile: true
