@@ -22,9 +22,9 @@ repositories {
 }
 
 dependencies {
-    compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
     annotationProcessor("org.mapstruct:mapstruct-processor:1.5.5.Final")
+    implementation(project(":api"))
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.liquibase:liquibase-core")
     implementation("org.postgresql:postgresql")

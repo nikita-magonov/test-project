@@ -1,8 +1,13 @@
 ---
 spring:
   main:
-    banner-mode:
+    banner-mode: off
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: postgres
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
